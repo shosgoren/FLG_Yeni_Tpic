@@ -204,12 +204,12 @@
   <ItemGroup>
     <Content Include="1494604833_BT_database_export.ico" />
   </ItemGroup>
-  <ItemGroup>
+  <!--<ItemGroup>
     <ProjectReference Include="..\Guncelleme\Guncelleme.csproj">
       <Project>{8042ec19-d6e0-4cbb-8f89-58abdb11c03f}</Project>
       <Name>Guncelleme</Name>
     </ProjectReference>
-  </ItemGroup>
+  </ItemGroup>-->
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
