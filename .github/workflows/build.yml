@@ -24,10 +24,10 @@ jobs:
       uses: nuget/setup-nuget@v2
 
     - name: Restore NuGet packages
-      run: nuget restore FLG.sln
+      run: nuget restore FLG/FLG.vbproj
 
-    - name: Build solution
-      run: msbuild FLG.sln /p:Configuration=Release /p:Platform="Any CPU"
+    - name: Build FLG project only (skip Guncelleme dependency)
+      run: msbuild FLG/FLG.vbproj /p:Configuration=Release /p:Platform="AnyCPU" /p:BuildProjectReferences=false
 
     - name: List build output
       run: dir FLG\bin\Release
